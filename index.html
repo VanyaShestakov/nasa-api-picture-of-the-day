@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<link rel="stylesheet" href="CSS/mainpage.css" type="text/css"/>
+		<meta charset="utf-8">	
+		<title>Picture of the Day</title>
+	</head>
+	<body>
+		<div class="page">
+			<div id="central" class="pageTitle">
+				Astronomy picture of the Day
+			</div>
+			<main>
+			<div class="tape">
+				<div class="blockContainer">
+					<div class="block">
+						<h1 id="title">Title</h1>
+						<p id="description" class="text"></p>
+						<section id="content" class="content content__info">
+							<figure>
+								<img class="mainImage" width="100%" id="imgOfDay" src="" alt="">
+							</figure>
+						</section>
+						<h1 id="contentError" class="notVisible" >
+							Not found
+						</h1>
+						<h1 id="connectionError" class="notVisible" >
+							Connection error
+						</h1>
+						<section id="contentLoader" class="content">
+							<div class="content__spinner"></div>
+						</section>
+					</div>		
+					<div class="shortBlock">
+
+						<h1>Choose the Date!</h1>	
+						<form onsubmit="return false" id="searchForm">
+							<h3><input class="datePicker" type="date" id="dateInput" required></h3>
+							<button type="submit" class="datePicker">Перейти</div>
+						</form>
+					</div>
+				</div>
+			</div></main>
+
+		</div>
+		<script src="script/index.js"></script>
+	</body>
+</html>
